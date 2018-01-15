@@ -1,0 +1,16 @@
+﻿@*weakly typed view or untyped*@
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+The local time is: @(((DateTime)Model).ToLocalTime())
+
+@*strongly typed view*@
+@model DateTime
+@{
+    ViewBag.Title = "Index";
+}
+<h2>Index</h2>
+The local time is: @Model.ToLocalTime()
+

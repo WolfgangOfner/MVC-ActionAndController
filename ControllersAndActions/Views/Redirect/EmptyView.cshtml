@@ -1,0 +1,8 @@
+﻿@{
+    ViewBag.Title = "Test";
+}
+
+<h2>Test index</h2>
+The local time is: @(((DateTime)TempData["Date"]).ToLocalTime())
+<p />
+The message is: @TempData["Message"]
